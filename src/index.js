@@ -1,5 +1,8 @@
+// Faz a importação da biblioteca React, que é necessária para criar componentes React.
 import React from "react";
+// Faz a importação da biblioteca ReactDOM, usada para manipular o DOM e renderizar componentes React no navegador.
 import ReactDOM from "react-dom";
+
 import App from "./App";
 
 ReactDOM.render(
