@@ -1,5 +1,8 @@
+// Faz a importação do React
 import React from "react"
+// Faz a importação do Form
 import Form from "./Form"
+
 
 const Table = ({ users, postUser, updateUser, deleteUser }) => {
 	const showUpdateUser = id => {
