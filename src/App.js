@@ -32,5 +32,5 @@ function App() {
 	)
 }
 
-//Faz a exportação de forma padrão na função/componente App
+//Faz a exportação de forma padrão do componente funcional App
 export default App
