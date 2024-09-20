@@ -34,37 +34,37 @@ const Form = ({ userData = {}, postUser, updateUser }) => {
 	}
 
 	return (
-		<form onSubmit={submitUser} className='row'>
+		<form onSubmit={submitUser} className='row'> {/* Formulário com submit definido */}
 			<input
 				type='text'
 				name='name'
 				value={user.name}
-				placeholder='Name'
-				onChange={e => handleValue(e)}
+				placeholder='Name'// Placeholder para o campo nome
+				onChange={e => handleValue(e)} // Atualiza o estado ao mudar o valor
 			/>
 			<input
 				type='email'
 				name='email'
 				value={user.email}
-				placeholder='Email'
+				placeholder='Email' // Placeholder para o campo email
 				onChange={e => handleValue(e)}
 			/>
 			<input
 				type='tel'
 				name='phone'
 				value={user.phone}
-				placeholder='Phone (10)'
-				pattern='[0-9]{10}'
+				placeholder='Phone (10)'// Placeholder para o campo telefone
+				pattern='[0-9]{10}'// garante que o telefone tenha 10 dígitos
 				onChange={e => handleValue(e)}
 			/>
-			<DropComapies companiesId={user.companiesId} handleValue={handleValue} />
+			<DropComapies companiesId={user.companiesId} handleValue={handleValue} /> {/* Componente para selecionar empresas */}
 			<input
 				className='btn-submit'
 				type='submit'
-				value={`${!userData.id ? "Add new user" : "Save user"}`}
+				value={`${!userData.id ? "Add new user" : "Save user"}`} // Texto do botão baseado na presença de userData.id
 			/>
 		</form>
 	)
 }
-
+// Faz a exportação de forma padrão do componente funcional Form
 export default Form
