@@ -10,7 +10,7 @@ function App() {
  //Retorna o jsx a ser renderizado
 	return (
 		<>
-          {/* Header é o cabeçalho da página */}
+  {/* Header é o cabeçalho da página */}
 			<header>
 				<div className='header__content'>
 					<div className='logo'>
