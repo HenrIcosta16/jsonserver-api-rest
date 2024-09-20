@@ -18,11 +18,14 @@ const Form = ({ userData = {}, postUser, updateUser }) => {
 		setUser({ ...user, [e.target.name]: e.target.value }) // Atualiza o estado com o valor do campo correspondente
 	}
 
+// Função criada para lidar com o envio do formulário
 	const submitUser = e => {
-		e.preventDefault()
+		e.preventDefault() // Previne o comportamento padrão do formulário
 
-		if (user.companiesId === "0") return
+  // Verifica se uma empresa foi selecionada
+		if (user.companiesId === "0") return  // Se não, não faz nada
 
+  // Se userData.id existe, atualiza o usuário, senão, adiciona um novo usuário
 		if (userData.id) {
 			updateUser(userData.id, user)
 		} else {
