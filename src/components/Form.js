@@ -1,6 +1,9 @@
+/ Faz a importação do useState, hook do React para gerenciar o estado.
 import React, { useState } from "react"
+// Faz a importação do componente Dropcompanies
 import DropComapies from "./DropCompanies"
 
+// Cria a função definindo assim o componente Form que recebe os props userData,postUser e uptadeUser
 const Form = ({ userData = {}, postUser, updateUser }) => {
 	const [user, setUser] = useState({
 		name: userData.name ?? "",
