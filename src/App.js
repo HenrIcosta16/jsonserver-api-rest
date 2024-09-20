@@ -5,7 +5,9 @@ import CrudUser from "./components/CrudUser"
 // Faz a importação do arquivo de estilo App.css
 import "./styles/App.css"
 
+// Cria a função definindo assim o componente App
 function App() {
+ //Retorna o jsx a ser renderizado
 	return (
 		<>
 			<header>
