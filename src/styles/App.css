@@ -49,40 +49,63 @@ header {
 
 /* Estilo aplicado à classe header__content, que define o conteúdo dentro do cabeçalho */
 .header__content {
+  /* Define a largura máxima do conteúdo como 1280px */
   max-width: 1280px;
+  /* Adiciona um espaçamento interno (padding) de 1rem nas laterais */
   padding: 0 1rem;
+   /* Centraliza horizontalmente o conteúdo dentro do header, aplicando margens automáticas */
   margin: auto;
+  /* Utiliza flexbox para alinhar e distribuir os elementos dentro do header de maneira flexível */
   display: flex;
+  display: flex;
+  /* Distribui o conteúdo (por exemplo, o logotipo e o título) nas extremidades opostas do header */
   justify-content: space-between;
+  /* Alinha os itens do flexbox verticalmente ao centro */
   align-items: center;
+  /* Define a posição como relativa, o que permite que elementos posicionados dentro deste bloco usem o `position` de forma relativa a este elemento */
   position: relative;
+  /* Define a altura do conteúdo para coincidir com a altura do header (3.5 rem) */
   height: 3.5rem;
 }
 
+/* Estilo aplicado à classe logo, que define a aparência do logotipo no header */
 .logo {
+  /* Define o tamanho da fonte para o texto dentro da logo como 20px */
   font-size: 20px;
+  /* Utiliza o layout flexbox para organizar os elementos dentro do container da logo */
   display: flex;
+  /* Define um espaço (gap) de 0.5rem entre os elementos dentro da logo, como o ícone e o texto */
   gap: 0.5rem;
+  /* Alinha verticalmente os itens ao centro dentro do container da logo, garantindo que o ícone e o texto fiquem alinhados */
   align-items: center;
+  /* Define a cor dos elementos dentro da logo como a cor de fundo do body, utilizando a variável --background-body */
   color: var(--background-body);
 }
 
+/* Estilo aplicado à tag main, que contém o conteúdo principal da página */
 main {
+  /* Define que o conteúdo principal ocupará 80% da largura total da tela */
   width: 80%;
+  /* Centraliza o conteúdo na página horizontalmente, aplicando margens automáticas */
   margin: auto;
+  /* Adiciona um espaçamento de 3rem abaixo do conteúdo principal, criando espaço entre o final do conteúdo e o rodapé */
   margin-bottom: 3rem;
+  /* Adiciona um espaçamento de 4.5rem acima do conteúdo principal, criando espaço entre o topo da página e o início do conteúdo */
   margin-top: 4.5rem;
+  /* Adiciona um espaçamento interno de 2rem ao redor do conteúdo */
   padding: 2rem;
   /* background-color: var(--background-content); */
   /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
   border-radius: 3px;
 }
 
+/* Este estilo define que o formulário terá uma largura ajustada automaticamente ao conteúdo interno e será centralizado horizontalmente na página */
 form {
   width: fit-content;
   margin: auto;
 }
 
+/* Este estilo aplica configurações comuns para elementos de entrada e seletores, ele remove qualquer borda padrão dos elementos,fornecendo um visual mais limpo e moderno. Aplica bordas arredondadas com um raio de 3px, suavizando os cantos dos elementos.Adiciona um espaçamento interno de 6px ao redor do conteúdo dos elementos e define uma margem de 0 em cima e embaixo, e de 6px nas laterais, criando espaço entre os elementos */
 input, select {
   border: none;
   border-radius: 3px;
@@ -90,75 +113,113 @@ input, select {
   margin:  0 6px;
 }
 
+/* Este estilo define a formatação para os elementos de cabeçalho h3, ajustando o alinhamento do texto e removendo qualquer margem superior do elemento h3, garantindo que não haja espaçamento adicional acima do cabeçalho.  */
 h3 {
   text-align: center;
   margin-top: 0;
 }
 
+/estilo do botao
 button {
+  /* Define a cor de fundo do botão, utilizando a variável CSS que contém a segunda cor definida na raiz */
   background-color: var(--second-color);
+  /* Define a cor do texto do botão, utilizando a variável CSS que contém a cor do texto */
   color: var(--text-color);
+  /* Remove a borda padrão do botão, dando um visual mais limpo */
   border: none;
+  /* Define que o cursor deve mudar para o estilo "mãozinha" ao passar sobre o botão, indicando que é clicável */
   cursor: pointer;
+  /* Aplica bordas arredondadas de 3px ao redor do botão */
   border-radius: 3px;
+  /* Define o peso da fonte como "bold", deixando o texto do botão em negrito */
   font-weight: bold;
 }
 
+/*estilo da classe buttons */
 .buttons {
+  /* Define que a largura em 100% */
   width: 100%;
+  /* Aplica o layout flexbox, permitindo que os botões dentro do container sejam organizados em uma linha */
   display: flex;
+  /* Distribui os botões uniformemente ao longo da linha, com espaço igual entre eles */
   justify-content: space-around;
+  /* Adiciona um espaçamento de 0.5rem entre os botões */
   gap: 0.5rem;
 }
 
+/*estilo da classe btn-submit */
 .btn-submit {
+  /* Define a cor de fundo do botão, utilizando a variável CSS que contém a cor primária */
   background-color: var(--primary-color);
+  /* Aplica um preenchimento interno ao botão: 6px na parte superior e inferior, e 12px nas laterais, aumentando o espaço ao redor do conteúdo */
   padding: 6px 12px;
+  /* Define o cursor para o estilo mãozinha quando o usuário passar o mouse sobre o botão, indicando que é clicável */
   cursor: pointer;
+  /* Define a espessura da fonte tornando o texto mais pesado */
   font-weight: bolder;
 }
 
+/* estilo do hover */
 button:hover,
+ /* Reduz a opacidade dos botões para 0.8 quando o mouse passa sobre eles, criando um efeito de "hover" */
 .btn-submit:hover {
   opacity: 0.8;
 }
 
+/* estilo da classe all-users */
 .all-users {
+/* Aplica uma margem superior de 3rem criando um espaço vertical acima do elemento */
 margin-top: 3rem;
 }
 
+/* estilo da classe titles */ 
 .titles,
 .row {
+  /* Define que a largura dos elementos será de 100% */
   width: 100%;
+  /* Aplica o layout flexbox, permitindo que os elementos filhos dentro desses containers sejam organizados em uma linha */
   display: flex;
+  /* Centraliza o texto dentro dos elementos flexbox, alinhando-o no centro horizontalmente */
   text-align: center;
 }
-.titles{
+
+.titles{ 
+  /* Define a espessura da fonte */
   font-weight: bold;
+  /* Define a cor de fundo atraves da var text-color */
   background-color: var(--text-color);
+  /* Define a cor atraves da var background-body */
   color: var(--background-body);
 }
 
 .titles div,
 .row input,
 .row select,
-  .row div{
+.row div{
+  /* Define que a largura de cada um desses elementos será 20% */
   width: 20%;
+  /* Define o preenchimento dos elementos */
   padding: 0.5rem;
 }
 
+/* estilo da classe hide-form */
 .hide-form {
+  /* Define que os elementos com a classe .hide-form não serão exibidos na página */
   display: none;
 }
 
+/* Aplica as regras de estilo dentro deste bloco apenas quando a largura da tela for igual ou inferior a 920 pixels */
 @media screen and (max-width: 920px) {
   main {
+    /* Define que a largura do elemento main será de 90% do espaço disponível, permitindo mais espaço nas laterais em telas menores */
     width: 90%;
   }
 }
 
+/* Aplica as regras de estilo dentro deste bloco apenas quando a largura da tela for igual ou inferior a 520 pixels */
 @media screen and (max-width: 520px) {
   main {
+    /* Define que a largura do elemento main será de 100%, ocupando toda a largura disponível na tela */
     width: 100%;
   }
 }
