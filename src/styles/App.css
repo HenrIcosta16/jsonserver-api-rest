@@ -1,3 +1,6 @@
+/* Aqui neste arquivo se encontra o estilo que é mostrado na pagina quando ela é carregada */
+
+/* root é uma pseudo-classe que é usada para definir variáveis CSS globais, que podem ser reutilizadas em qualquer lugar da folha de estilo */ 
 :root {
   --background-body: #E5E5E5;
   --background-content: #1D1D1D;
@@ -6,30 +9,45 @@
   --second-color: #89DDFF;
 }
 
+/*estilo do body corpo da pagina */ 
 body {
+  /* Remove as margens padrão do body para evitar espaçamento indesejado */
   margin: 0;
+   /* Define o tamanho da fonte base para o texto, 1rem equivale ao tamanho da fonte padrão do navegador, e especifica uma lista de famílias de fontes para serem usadas como a fonte da Apple e a fonte Segoe UI do windows */
   font-size: 1rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  /* define uma suavização e melhora a aparencia do texto */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* define a cor de fundo do body com base no valor que foi passado para a variavel */
   background-color: var(--background-body);
   color: var(--text-color);
 }
 
+/* estilo do header cabeçalho da pagina */
 header {
+  /* Define a posição como fixa, fazendo com que o cabeçalho permaneça visível no topo da página, mesmo quando o usuário rolar a página */
   position: fixed;
+  /* Define a largura do header para ocupar 100% da largura da tela */
   width: 100%;
+   /* Define a altura do cabeçalho como 3.5 rem, equivalente ao tamanho relativo da fonte raiz */
   height: 3.5rem;
+  /* Define a posição do cabeçalho na parte superior da página, a 0 pixels do topo e da esquerda */
   top: 0px;
   left: 0px;
+  /* Cor de fundo do cabeçalho, definida pela variável --background-content */
   background-color: var(--background-content);
+   /* Cor do texto dentro do cabeçalho, definida pela variável --background-body */
   color: var(--background-body);
+  /* Adiciona uma sombra abaixo do cabeçalho, criando um efeito de elevação leve (com pouca opacidade) */
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    /* Define o valor da ordem de empilhamento de z-index para 10 nos arquivos header */
   z-index: 10;
 }
 
+/* Estilo aplicado à classe header__content, que define o conteúdo dentro do cabeçalho */
 .header__content {
   max-width: 1280px;
   padding: 0 1rem;
