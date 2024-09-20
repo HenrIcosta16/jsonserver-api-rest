@@ -4,7 +4,7 @@ import React, { useState } from "react"
 import DropComapies from "./DropCompanies"
 
 // Cria a função definindo assim o componente Form que recebe os props userData,postUser e uptadeUser
-const Form = ({ userData = {}, postUser, updateUser }) => {
+const Form = ({ userData = {}, postUser, updateUser }) => { 
 	const [user, setUser] = useState({
 		name: userData.name ?? "",
 		username: userData.username ?? "",
@@ -13,8 +13,9 @@ const Form = ({ userData = {}, postUser, updateUser }) => {
 		companiesId: userData.companiesId ?? "0",
 	})
 
+ // Função criada para atualizar o estado do usuário com base na entrada do formulário
 	const handleValue = e => {
-		setUser({ ...user, [e.target.name]: e.target.value })
+		setUser({ ...user, [e.target.name]: e.target.value }) // Atualiza o estado com o valor do campo correspondente
 	}
 
 	const submitUser = e => {
