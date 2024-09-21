@@ -5,9 +5,9 @@ import Form from "./Form"
 
 // Cria a função definindo assim o componente Table que recebe os props users,postUser,updateUser e deleteUser
 const Table = ({ users, postUser, updateUser, deleteUser }) => {
- // Função para mostrar a atualização do usuário que recebe um parâmetro id
+        // Função para mostrar a atualização do usuário que recebe um parâmetro id
 	const showUpdateUser = id => {
-  //pega os elementos do formulário com a classe show-form-id
+                //pega os elementos do formulário com a classe show-form-id
 		const form = document.getElementsByClassName(`show-form-${id}`)
 		form[0].classList.toggle("hide-form") // alterna a classe hide-form no primeiro elemento
 	}
