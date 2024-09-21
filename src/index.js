@@ -11,6 +11,6 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-//Aqui a aplicação é linkada ao elemento HTML com o id "root", permitindo que o React manipule e exiba o conteúdo dessa área da página.
+  //Aqui a aplicação é linkada ao elemento HTML com o id "root", permitindo que o React manipule e exiba o conteúdo dessa área da página.
   document.getElementById("root")
 );
