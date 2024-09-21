@@ -16,7 +16,7 @@ export const httpHelper = () => {
 
                 // Define o método da requisição, ou usa "GET" como padrão 
 		options.method = options.method || defaultMethod
-                // Mescla os headers fornecidos com os headrs padrão 
+                // Mescla os headers fornecidos com os headers padrão 
 		options.headers = options.headers
 			? { ...defaultHeaders, ...options.headers }
 			: defaultHeaders
