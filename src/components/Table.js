@@ -25,8 +25,8 @@ const Table = ({ users, postUser, updateUser, deleteUser }) => {
 					<div>{user.companies.name}</div>
                                         {/* div que agrupa os botões */}
 					<div className='buttons'>
-						<button onClick={() => showUpdateUser(user.id)}>Update</button> {/* botão para acionar a exibição da atualização de usuário no formulário */}
-						<button onClick={() => deleteUser(user.id)}>Delete</button> {/* botão para acionar a exibição de deleção de usuário */}
+						<button onClick={() => showUpdateUser(user.id)}>Update</button> {/* botão para acionar a exibição do formulário de atualização */}
+						<button onClick={() => deleteUser(user.id)}>Delete</button> {/* botão para deletar usuário */}
 					</div>
 				</div>
 				<div className={`hide-form show-form-${user.id}`}>
