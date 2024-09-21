@@ -46,7 +46,7 @@ const Table = ({ users, postUser, updateUser, deleteUser }) => {
 				<div>Actions</div>
 			</div>
 			<div className='rows'>
-				{users && users.map(u => <Row user={u}  key={u.id} />)} {/* mapeia os usuários para criar uma linha para cada um */}
+				{users && users.map(u => <Row user={u}  key={u.id} />)} {/* o map é usado pra iterar sobre os usuários para criar uma linha para cada um */}
 			</div>
 		</div>
 	)
