@@ -43,7 +43,7 @@ const DropCompanies = ({ companiesId, handleValue }) => {
 			}}
 		>
 
-			{/* Mapeia as empresas para gerar as opções no select */}
+			{/* o map itera sobre as empresas para gerar as opções no select */}
 			{companies.map(c => (
 				<option value={c.id} key={c.id}>
 					{c.name}
