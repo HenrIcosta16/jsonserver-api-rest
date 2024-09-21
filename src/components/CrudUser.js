@@ -70,7 +70,7 @@ const CrudUser = () => {
 			<div className='all-users'>
 				{/* Título para a seção de todos os usuários */}
 				<h3>All users</h3>
-				{/* tabela que exibe todos os usuários atraves das operações de crud */}
+				{/* Componente Table que exibe todos os usuários atraves das operações de crud */}
 				<Table
 					users={users}
 					setUsers={setUsers}
