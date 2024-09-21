@@ -23,9 +23,9 @@ function App() {
 					</div>
 				</div>
 			</header>
-      			{*/ Main é o cara que armazena o conteúdo principal da página */}
+      			{/* Main é o cara que armazena o conteúdo principal da página */}
 			<main>
-    				{*/ Componente principal da aplicação onde será feita as operações de crud dos usuários */}
+    				{/* Componente principal da aplicação onde será feita as operações de crud dos usuários */}
 				<CrudUser />
 			</main>
 		</>
