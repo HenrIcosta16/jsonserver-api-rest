@@ -12,18 +12,18 @@ const Table = ({ users, postUser, updateUser, deleteUser }) => {
 		form[0].classList.toggle("hide-form") // alterna a classe hide-form no primeiro elemento
 	}
 
-// Cria um componente funcional chamado Row que representa uma linha da tabela,que recebe o prop user
+        // Cria um componente funcional chamado Row que representa uma linha da tabela,que recebe o prop user
 	const Row = ({ user }) => {
-  // Retorna o jsx que o componente Row irá renderizar
+                // Retorna o jsx que o componente Row irá renderizar
 		return (
 			<>
-    {/* div que exibe as informações dos usuários */}
+                                {/* div que exibe as informações dos usuários */}
 				<div className='row'>
 					<div>{user.name}</div>
 					<div>{user.email}</div>
 					<div>{user.phone}</div>
 					<div>{user.companies.name}</div>
-     {/* div que agrupa os botões */}
+                                        {/* div que agrupa os botões */}
 					<div className='buttons'>
 						<button onClick={() => showUpdateUser(user.id)}>Update</button> {/* botão para acionar a exibição da atualização de usuário no formulário */}
 						<button onClick={() => deleteUser(user.id)}>Delete</button> {/* botão para acionar a exibição de deleção de usuário */}
